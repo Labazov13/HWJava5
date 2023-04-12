@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="881c09f0-5f7b-4065-9711-521bb95c8a14" name="Changes" comment="Add exam1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exam2.java" afterDir="false" />
+    <list default="true" id="881c09f0-5f7b-4065-9711-521bb95c8a14" name="Changes" comment="Add exam2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exam2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exam2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,11 +126,19 @@
       <option name="project" value="LOCAL" />
       <updated>1681217041983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add exam2">
+      <created>1681224920159</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681224920159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add exam1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add exam1" />
+    <MESSAGE value="Add exam2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add exam2" />
   </component>
 </project>

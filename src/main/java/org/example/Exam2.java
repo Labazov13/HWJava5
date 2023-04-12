@@ -1,30 +1,9 @@
 package org.example;
-
 import java.util.*;
-
 /*
 * Пусть дан список сотрудников:
-Иван Иванов
-Светлана Петрова
-Кристина Белова
-Анна Мусина
-Анна Крутова
-Иван Юрин
-Петр Лыков
-Павел Чернов
-Петр Чернышов
-Мария Федорова
-Марина Светлова
-Мария Савина
-Мария Рыкова
-Марина Лугова
-Анна Владимирова
-Иван Мечников
-Петр Петин
-Иван Ежов
-написать программу, которая найдёт и выведет повторяющиеся имена с количеством повторений. Отсортировать по убыванию популярности.*/
+Написать программу, которая найдёт и выведет повторяющиеся имена с количеством повторений. Отсортировать по убыванию популярности.*/
 public class Exam2 {
-
     public static HashMap <String, String> addData(){
         HashMap <String, String> list = new HashMap<>();
         list.put("Иванов", "Иван");
@@ -47,7 +26,6 @@ public class Exam2 {
         list.put("Ежов", "Иван");
         return list;
     }
-
     public static LinkedList <String> uniqueNames(HashMap <String, String> list){
         LinkedList <String> linkedList = new LinkedList<>();
         for (Map.Entry<String, String> stringStringEntry : list.entrySet()) {
@@ -71,21 +49,43 @@ public class Exam2 {
             listRepeat.put(item, count);
             count = 0;
         }
-        System.out.println(listRepeat);
+
         return listRepeat;
     }
+    public static void sortMap2(HashMap <String, Integer> mapRepeat){
+        int [] array = new int[mapRepeat.size()];
+        LinkedHashMap<String, Integer> resultMap = new LinkedHashMap<>();
+        int i = 0;
+            for (Map.Entry<String, Integer> stringStringEntry : mapRepeat.entrySet()) {
+                array[i] = stringStringEntry.getValue();
+                i++;
+            }
+        int temp = 0;
+        for(int j = 0; j < array.length; j++){
+            for(int o = 0; o < array.length - 1; o++){
+                if(array[o] < array[o + 1]){
+                    temp = array[o];
+                    array[o] = array[o + 1];
+                    array[o + 1] = temp;
+                }
+            }
+        }
+        for(int index = 0; index < array.length; index++){
+            for (Map.Entry<String, Integer> stringStringEntry : mapRepeat.entrySet()) {
+                if(array[index] == stringStringEntry.getValue()){
+                    resultMap.put(stringStringEntry.getKey(), stringStringEntry.getValue());
+                }
+            }
+        }
+        System.out.println(resultMap);
 
-    public static void sortMap(HashMap <String, Integer> mapRepeat){
-        LinkedHashMap<String, Integer> sortedMap = new LinkedHashMap<>();
-        mapRepeat.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue())); //Пожалуйста, объясните все, что после sorted идет) я этот кусок кода взял в интернете и понял только до этого момента(
-        System.out.println(sortedMap);
     }
     public static void main(String[] args) {
         HashMap <String, String> list = addData();
         LinkedList <String> linkedList = uniqueNames(list);
         System.out.println(linkedList);
         HashMap <String, Integer> mapRepeat = findRepetition(list, linkedList);
-        sortMap(mapRepeat);
+        sortMap2(mapRepeat);
     }
 
     }
