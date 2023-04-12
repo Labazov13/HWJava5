@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="881c09f0-5f7b-4065-9711-521bb95c8a14" name="Changes" comment="Add exam2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exam3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exam4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exam2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exam2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Exam2">
+  <component name="RunManager" selected="Application.Exam4">
     <configuration name="Exam1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Exam1" />
       <module name="HWJava5" />
@@ -75,8 +76,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Examseminar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Examseminar" />
+    <configuration name="Exam3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Exam3" />
+      <module name="HWJava5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exam4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Exam4" />
       <module name="HWJava5" />
       <extension name="coverage">
         <pattern>
@@ -103,10 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exam4" />
+        <item itemvalue="Application.Exam3" />
         <item itemvalue="Application.Exam2" />
         <item itemvalue="Application.Exam1" />
         <item itemvalue="Application.examSeminar" />
-        <item itemvalue="Application.Examseminar" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681224920159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add exam2">
+      <created>1681292823010</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681292823010</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
